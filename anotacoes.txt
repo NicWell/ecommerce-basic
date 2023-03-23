@@ -1,0 +1,4 @@
+sapato1 = 399
+sapato2 = 399
+sapato3 = 799
+sapato4 = 90
