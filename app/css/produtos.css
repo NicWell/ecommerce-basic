@@ -1,0 +1,124 @@
+form {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.bloco1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-block-end: 20px;
+}
+.bloco1 input{
+    margin-right: 10px;
+    max-width: 200px;
+    text-align: center;
+    height: 20px;
+}
+.bloco2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-block-end: 20px;
+}
+.bloco2 input{
+    margin-left: 24px;
+    margin-right: 10px;
+    max-width: 200px;
+    text-align: center;
+    height: 20px;
+}
+.bloco3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-block-end: 20px;
+}
+.bloco3 input{
+    margin-left: 3px;
+    margin-right: 10px;
+    max-width: 200px;
+    text-align: center;
+    height: 20px;
+}
+.bloco4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-block-end: 20px;
+}
+.bloco4 input{
+    margin-right: 20px;
+    max-width: 200px;
+    text-align: center;
+    height: 20px;
+}
+.bloco5 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-block-end: 20px;
+}
+.bloco5 input{
+    margin-right: 10px;
+    max-width: 200px;
+    text-align: center;
+    height: 20px;
+}
+.container{
+    background: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.btns{
+    margin-block-end: 10px;
+    margin-top: 10vh;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#barras{
+    margin-right: 10px;
+    margin-left: 10px
+}
+
+#preco_custo{
+    margin-left: 37px;
+}
+
+
+#btn1{
+    transition: 0.6s;
+    border-radius: 6px;
+    border-style: outset;
+    height: 30px;
+    width: 100px;
+}
+#btn1:hover{
+    background-color:rgb(50, 255, 23);
+    border-radius: 6px;
+}
+#reset{
+    margin-left: 50vh;
+    transition: 0.6s;
+    height: 30px;
+    width: 100px;
+    border-radius: 6px;
+}
+#reset:hover{
+    background-color:rgb(255, 23, 23);
+    border-radius: 6px;
+    color: white;
+}

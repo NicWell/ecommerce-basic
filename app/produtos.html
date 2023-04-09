@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Wellington Nicacio">
+    <meta name="keywords" content="SHOES, SAPATOS, TÊNIS, BOTAS, CALÇADOS">
+    <meta name="description" content="Loja de sapatos passo a passo">
+    <title>PASSO A PASSO</title>
+    <link rel="stylesheet" href="/app/css/style.css">
+    <link rel="stylesheet" href="/app/css/produtos.css">
+  </head>
+<body>
+    <header>
+      <nav>
+        <a href="./index.html" class="logo">HOME
+          <span></span>
+        </a>
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="nav-list">
+          <li><a href="./funcionario.html">FUNCIONARIO<span></span></a></li>
+          <li><a href="./fornecedor.html">FORNECEDOR<span></span></a></li>
+          <li><a href="./cliente.html">CLIENTE<span></span></a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2>CADASTRO</h2>
+      <div class="container">
+        <form autocomplete="on" name="formCad" method="post">
+          <div class="bloco1">
+            <label for="nome">Produto</label>
+            <input type="text" name="nome" id="nome" placeholder="Descrição" maxlength="30" />
+            <label for="ncm">NCM</label>
+            <input type="number" name="ncm" id="ncm" placeholder="04032000"/>
+          </div>
+          <div class="bloco2">
+            <div>
+              <label for="preco_custo">Custo</label>
+              <input type="text" name="preco_custo" id="preco_custo" placeholder="R$0,00" />
+            </div>
+            <div>
+              <label for="preco_venda">Venda</label>
+              <input type="text" name="preco_venda" id="preco_venda" placeholder="R$0,00" />
+            </div>
+          </div>
+          <div class="bloco3">
+            <label for="preco_min">Minimo</label>
+            <input type="text" name="preco_min" id="preco_min" placeholder="R$0,00" />
+            <label for="marca">Marca</label>
+            <input type="text" name="marca" id="marca" placeholder="Descrição" />
+          </div>
+          <div class="bloco4">
+            <label for="categoria">Categoria</label>
+            <input type="text" name="categoria" id="categoria" placeholder="Descrição" />
+            <label for="barras">CEAN</label>
+            <input type="text" name="barras" id="barras" placeholder="Descrição" />
+          </div>
+          <div class=" bloco5">
+            <label for="imposto">Imposto</label>
+            <select name="imposto" id="imposto">
+              <option value="00-tributado">Tributado</option>
+              <option value="60-st">Subistituição</option>
+              <option value="40-isento">Isento</option>
+            </select>
+            <label for="estoque">Estoque</label>
+            <input type="number" name="estoque" id="estoque" placeholder="0" />
+          </div>
+          <div class="btns">
+            <button type="button" id="btn1" onclick="cadastro()">CADASTRAR</button>
+            <button type="reset" id="reset">LIMPAR</button>
+          </div>
+        </form>
+      </div>
+      <script defer src="/app/js/index.js"></script>
+    </main>
+  </body>
+  <footer><p>Wellington Nicacio</p></footer>
+</html>
