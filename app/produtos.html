@@ -30,23 +30,23 @@
       </nav>
     </header>
     <main>
-      <h2>CADASTRO</h2>
+      <h2>CADASTRO PRODUTO</h2>
       <div class="container">
         <form autocomplete="on" name="formCad" method="post">
           <div class="bloco1">
             <label for="nome">Produto</label>
-            <input type="text" name="nome" id="nome" placeholder="Descrição" maxlength="30" />
+            <input type="text" name="nome" id="nome" placeholder="Descrição" maxlength="30" minlength="5" required />
             <label for="ncm">NCM</label>
-            <input type="number" name="ncm" id="ncm" placeholder="04032000"/>
+            <input type="number" name="ncm" id="ncm" placeholder="04032000" maxlength="8" minlength="8" required/>
           </div>
           <div class="bloco2">
             <div>
               <label for="preco_custo">Custo</label>
-              <input type="text" name="preco_custo" id="preco_custo" placeholder="R$0,00" />
+              <input type="number" name="preco_custo" id="preco_custo" placeholder="R$0,00" />
             </div>
             <div>
               <label for="preco_venda">Venda</label>
-              <input type="text" name="preco_venda" id="preco_venda" placeholder="R$0,00" />
+              <input type="number" name="preco_venda" id="preco_venda" placeholder="R$0,00" required/>
             </div>
           </div>
           <div class="bloco3">
@@ -64,9 +64,10 @@
           <div class=" bloco5">
             <label for="imposto">Imposto</label>
             <select name="imposto" id="imposto">
-              <option value="00-tributado">Tributado</option>
-              <option value="60-st">Subistituição</option>
-              <option value="40-isento">Isento</option>
+              <option value="00">Tributado</option>
+              <option value="60">Subistituição</option>
+              <option value="40">Isento</option>
+              <option value="99">Outros</option>
             </select>
             <label for="estoque">Estoque</label>
             <input type="number" name="estoque" id="estoque" placeholder="0" />
@@ -78,6 +79,7 @@
         </form>
       </div>
       <script defer src="/app/js/index.js"></script>
+      <script defer src="/app/js/prod.js" ></script>
     </main>
   </body>
   <footer><p>Wellington Nicacio</p></footer>

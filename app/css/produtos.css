@@ -1,8 +1,10 @@
 form {
     margin-top: 10vh;
+}
+main{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    
 }
 .bloco1{
     display: flex;
@@ -53,7 +55,7 @@ form {
     margin-block-end: 20px;
 }
 .bloco4 input{
-    margin-right: 20px;
+    margin-right: 17px;
     max-width: 200px;
     text-align: center;
     height: 20px;
@@ -86,8 +88,9 @@ form {
     margin-block-end: 10px;
     margin-top: 10vh;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
+
 
 #barras{
     margin-right: 10px;

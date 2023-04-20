@@ -1,34 +1,119 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Wellington Nicacio">
-    <meta name="keywords" content="SHOES, SAPATOS, TÊNIS, BOTAS, CALÇADOS">
-    <meta name="description" content="Loja de sapatos passo a passo">
-    <title>PASSO A PASSO</title>
-    <link rel="stylesheet" href="/app/css/style.css">
-  </head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Wellington Nicacio">
+  <meta name="keywords" content="SHOES, SAPATOS, TÊNIS, BOTAS, CALÇADOS">
+  <meta name="description" content="Loja de sapatos passo a passo">
+  <title>PASSO A PASSO</title>
+  <link rel="stylesheet" href="/app/css/style.css">
+  <link rel="stylesheet" href="/app/css/produtos.css">
+</head>
+
 <body>
-    <header>
-      <nav>
-        <a href="./index.html" class="logo">HOME
-          <span></span>
-        </a>
-        <div class="mobile-menu">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
+  <header>
+    <nav>
+      <a href="./index.html" class="logo">HOME
+        <span></span>
+      </a>
+      <div class="mobile-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <ul class="nav-list">
+        <li><a href="./produtos.html">PRODUTOS<span></span></a></li>
+        <li><a href="./fornecedor.html">FORNECEDOR<span></span></a></li>
+        <li><a href="./cliente.html">CLIENTE<span></span></a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2>CADASTRO FUNCIONÁRIO</h2>
+    <div class="container">
+      <form autocomplete="on" name="formCad" method="post">
+        <div class="bloco1">
+          <label for="nome">NOME</label>
+          <input type="text" name="nome" id="nome" placeholder="Nome" maxlength="30" minlength="5" required />
+          <label for="cpf">CPF</label>
+          <input type="text" id="cpf" value="" name="cpf" onkeydown="javascript: fMasc( this, mCPF );" maxlength="14"
+            required>
         </div>
-        <ul class="nav-list">
-          <li><a href="./produtos.html">PRODUTOS<span></span></a></li>
-          <li><a href="./fornecedor.html">FORNECEDOR<span></span></a></li>
-          <li><a href="./cliente.html">CLIENTE<span></span></a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <script defer src="/app/js/index.js"></script>
-    </main>
+        <div class="bloco2">
+          <div>
+            <label for="email">EMAIL</label>
+            <input type="email" name="email" id="email" placeholder="teste@gmail.com" multiple />
+          </div>
+          <div>
+            <label for="rua">Rua</label>
+            <input type="text" name="rua" id="rua" placeholder="nome da rua" required />
+          </div>
+        </div>
+        <div class="bloco3">
+          <label for="bairro">Bairro</label>
+          <input type="text" name="bairro" id="bairro" placeholder="nome do bairro" />
+          <label for="cidade">Cidade</label>
+          <input type="text" name="cidade" id="cidade" placeholder="nome da cidade" />
+        </div>
+        <div class="bloco4">
+          <label for="uf">UF</label>
+          <select name="uf" id="uf">
+            <option value="">Selecione</option>
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="ES">Espirito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+            <option value="PR">Paraná</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option>
+          </select>
+          <label for="num">Numero</label>
+          <input type="text" name="num" id="num" placeholder="S/N" />
+        </div>
+        <div class=" bloco5">
+          <input type="radio" id="sexo" name="sexo" value="M">
+          <label for="sexo">Masculino</label>
+          <input type="radio" id="sexo2" name="sexo" value="F">
+          <label for="sexo">Feminino</label>
+          <label for="UserSenha">Senha:</label>
+          <input type="password" name="UserSenha" id="userSenha" placeholder="Digite sua Senha" minlength="4"
+                maxlength="8" pattern="(?=.*\d).{4,8}" required />
+        </div>
+        <div class="btns">
+          <button type="button" id="btn1" onclick="cadFun()">CADASTRAR</button>
+          <button type="reset" id="reset">LIMPAR</button>
+        </div>
+      </form>
+    </div>
+    <script defer src="/app/js/index.js"></script>
+    <script defer src="/app/js/func.js"></script>
+  </main>
+</body>
+<footer>
+  <p>Wellington Nicacio</p>
+</footer>
+
+
 </html>
